@@ -35,8 +35,10 @@
 ;; Better bracket expansion
 (defun expand-bracket-enter ()
   (interactive)
-  (if (and (char-equal (char-before) ?{)
-	   (char-equal (char-after)) ?})
+  (if (and (char-before)
+	   (char-after)
+	   (char-equal (char-before) ?{)
+	   (char-equal (char-after) ?}))
       (progn (newline-and-indent)
 	     (newline-and-indent)
 	     (smart-previous))
