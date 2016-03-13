@@ -47,5 +47,9 @@
 (define-key c-mode-map (kbd "RET") 'expand-bracket-enter)
 (define-key c++-mode-map (kbd "RET") 'expand-bracket-enter)
 
+;; Set undo to C-- for consistency
+(global-set-key (kbd "C--") 'undo-tree-undo)
+(global-set-key (kbd "C-_") 'undo-tree-redo)
+(define-key undo-tree-map (kbd "C-\\") nil)
 
 
