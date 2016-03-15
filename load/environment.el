@@ -68,3 +68,9 @@
 
 ;; Enable fancy debugging
 (setq gdb-many-windows t)
+
+;; Reompile on C-x C-m
+(require 'compile)
+(setq compilation-last-buffer nil) ;; not sure what this does tbh
+(setq compilation-ask-about-save nil) ;; save modified buffers before compiling
+(global-set-key (kbd "C-x C-m") 'recompile)
