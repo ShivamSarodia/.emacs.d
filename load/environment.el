@@ -21,6 +21,7 @@
 ;; Turn on showing matching parentheses
 (setq show-paren-delay 0) 
 (show-paren-mode 1)
+(setq sp-highlight-pair-overlay nil) ;; turn off highlighting between
 
 ;; Turn off weird bell noises
 (setq ring-bell-function #'ignore)
