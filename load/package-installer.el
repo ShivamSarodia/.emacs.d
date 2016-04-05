@@ -28,7 +28,8 @@
 		     solarized-theme
 		     undo-tree
 		     window-numbering
-		     yasnippet))
+		     yasnippet
+		     avy))
 
 
 (require 'package)

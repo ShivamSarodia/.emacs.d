@@ -55,6 +55,7 @@
 (require 'ggtags-setup)
 (require 'company-irony-setup)
 
-
+;; Set up AVY keybinding
+(global-set-key (kbd "M-s") 'avy-goto-char-2)
 
 
