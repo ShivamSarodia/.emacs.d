@@ -10,7 +10,7 @@
 (setq linum-format "%d ")
 
 ;; Disable scroll bars
-(toggle-scroll-bar -1)
+;; (toggle-scroll-bar)
 
 ;; Sets cursor to bar
 (setq-default cursor-type 'bar)
